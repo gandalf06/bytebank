@@ -10,13 +10,23 @@ void main() => runApp(MaterialApp(
         floatingActionButton: FloatingActionButton(
           child: Icon(Icons.add),
         ),
-        body: const Center(
-          child: Text(
-            'This is home screen to Byte Bank App',
-            style: TextStyle(
-              fontSize: 24,
+        body: Column(
+          children: [
+            Card(
+              child: ListTile(
+                leading: Icon(Icons.monetization_on),
+                title: Text("100,00"),
+                subtitle: Text('any_account'),
+              ),
             ),
-          ),
+            Card(
+              child: ListTile(
+                leading: Icon(Icons.monetization_on),
+                title: Text('200,00'),
+                subtitle: Text('any_account'),
+              ),
+            ),
+          ],
         ),
       ),
     ));
